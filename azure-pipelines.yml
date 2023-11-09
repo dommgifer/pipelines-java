@@ -6,7 +6,9 @@
 trigger:
 - main
 
-pool: Default
+pool: 
+ name: Default
+ demands: Agent.Version -equals 3.227.2
 
 steps:
 - task: Maven@3
