@@ -21,6 +21,6 @@ steps:
     goals: 'package'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target/*.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
